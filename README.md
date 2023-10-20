@@ -34,7 +34,7 @@ npm install @react-native-async-storage/async-storage
 npm install stream-browserify
 ```
 
--   Add Babel 'module-resorcer' plugin to use our Quick Crypto, Buffer and Stream modules
+-   Add Babel 'module-resorver' plugin to use our Quick Crypto, Buffer and Stream modules
 ```
 npm install --save-dev babel-plugin-module-resolver
 ```
