@@ -12,19 +12,19 @@ npx react-native@0.68.4 init MatrixRNClient --version 0.68.4
 
 ```
 npm install fbemitter unorm bluebird axios
-```
+````
 
 -   Add packages to encrypt/decrypt attachements
 
-````
+```
 npm install @craftzdog/react-native-buffer
 npm install react-native-quick-base64
-```
+````
 
 -   Cannot use the latest version because of RN Version 0.68.4 !
 ```
 npm install react-native-quick-crypto@0.4.6
-```
+````
 
 -   Add async-storage package to be able to save Crypto keys
 ```
