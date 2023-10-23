@@ -12,7 +12,7 @@ import {SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, V
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-import './src/DocumentPolyfill.js';
+import Matrix from './src/Matrix.js';
 
 const App = (props) => {
     const isDarkMode = useColorScheme() === 'dark';
@@ -28,7 +28,9 @@ const App = (props) => {
                 <View
                     style={{
                         backgroundColor: isDarkMode ? Colors.black : Colors.white,
-                    }}></View>
+                    }}>
+                    <Matrix />
+                </View>
             </ScrollView>
         </SafeAreaView>
     );
