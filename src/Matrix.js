@@ -39,8 +39,8 @@ class Matrix extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            userName: 'tbatest',
-            password: 'W]!5NDT)<f8<lPu,tS}Z',
+            userName: '<user>',
+            password: '<password>',
             userId: '',
             accessToken: '',
             client: '',
