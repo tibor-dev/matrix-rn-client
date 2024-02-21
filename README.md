@@ -42,6 +42,28 @@ npm install stream-browserify
 ```
 npm install --save-dev babel-plugin-module-resolver
 ```
+```
+module.exports = {
+    presets: ['module:metro-react-native-babel-preset'],
+    env: {
+        production: {
+            plugins: ["transform-remove-console"],     //removing consoles.log from app during release (production) versions
+        },
+    },
+    plugins: [
+        [
+            'module-resolver',
+            {
+                alias: {
+                    crypto: 'react-native-quick-crypto',
+                    stream: 'stream-browserify',
+                    buffer: '@craftzdog/react-native-buffer',
+                },
+            },
+        ],
+    ],
+};
+```
 
 -   Set JSC flavor to org.webkit:android-jsc-intl:+ in android\app\build.gradle
 
