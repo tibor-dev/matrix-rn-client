@@ -121,10 +121,11 @@ import 'react-native-url-polyfill/auto';
 ```
 npm install matrix-js-sdk@28.2.0
 ```
--  Add override to package.json to correct crypto-js vulnerabilities
+-  Add override to package.json to correct crypto-js and semver vulnerabilities
 ```
   "overrides": {
-    "crypto-js": "4.2.0"
+    "crypto-js": "4.2.0",
+    "semver": "5.7.2"
   },
 ```  
 # Build errors and solutions
