@@ -121,7 +121,12 @@ import 'react-native-url-polyfill/auto';
 ```
 npm install matrix-js-sdk@28.2.0
 ```
-
+-  Add override to package.json to correct crypto-js vulnerabilities
+```
+  "overrides": {
+    "crypto-js": "4.2.0"
+  },
+```  
 # Build errors and solutions
 
 -   Could not find react-native-0.71.0-rc.0-debug.aar
