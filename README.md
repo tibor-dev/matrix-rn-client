@@ -74,7 +74,7 @@ npm install "https://gitlab.matrix.org/matrix-org/olm/-/package_files/2572/downl
 npm install react-native-get-random-values
 ```
 
--   Change node_modules\@matrix-org\olm\package.json to use olm-legacy
+-   Change node_modules\@matrix-org\olm\package.json to use olm-legacy and also add react_native and browser values to find fs
 
 ```
 "version": "3.2.15",
@@ -89,6 +89,13 @@ npm install react-native-get-random-values
     "checksums.txt",
     "checksums.txt.asc"
   ],
+
+  "react-native": {
+    "fs": "react-native-level-fs"
+  },
+  "browser": {
+    "fs": "react-native-level-fs"
+  }
 ```
 
 -   Add url, path, util, rn-nodeify, js modules
